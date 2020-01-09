@@ -2,11 +2,11 @@ const pi = 3.1415926535897932384626433832795028841971693993751058209749445923078
 var time = new Date().toTimeString().split(" ")[0];
 document.querySelector(".time").innerText = "Het is " + time;
 
-function aaa(){
+function updateTime(){
 	var time = new Date().toTimeString().split(" ")[0];
 	document.querySelector(".time").innerText = "Het is " + time;
 }
-setInterval(aaa, 1000);
+setInterval(updateTime, 1000);
 function calc(){
 	let dia = document.querySelector("input").value;
 	let omtrek = pi * 2 * dia;
